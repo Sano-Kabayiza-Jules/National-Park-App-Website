@@ -5,11 +5,13 @@
     font-family: Arial, sans-serif;
 }
 
+/* Highlighted Section: Add the background image here */
 body {
-    background: url('https://via.placeholder.com/1920x1080?text=Nature+Background') no-repeat center center fixed;
+    background: url('animal.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
 }
+
 
 /* Navigation Bar */
 .navbar {
@@ -162,6 +164,53 @@ body {
 }
 
 .more-projects-btn:hover {
+    background: #00cc00;
+}
+.donate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4500; /* Orange for emphasis */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.donate-btn:hover {
+    background: #e03e00;
+}
+
+/* Partners Section */
+.partners-section {
+    padding: 50px 0;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.partner-logos img {
+    max-width: 150px;
+}
+
+/* Sponsor Section */
+.sponsor-section {
+    padding: 50px 0;
+}
+
+.sponsor-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ff00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.sponsor-btn:hover {
     background: #00cc00;
 }
 
