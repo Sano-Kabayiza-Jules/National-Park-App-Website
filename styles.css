@@ -197,21 +197,66 @@ body {
 }
 
 /* Sponsor Section */
+/* Sponsorship Section */
 .sponsor-section {
-    padding: 50px 0;
+    padding: 50px 0; /* Same padding as .join-section for consistent spacing */
 }
 
-.sponsor-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #00ff00;
-    color: #000;
-    text-decoration: none;
-    border-radius: 25px;
+.sponsor-section h2 {
+    font-size: 18px; /* Matches .section-title from other sections */
+    color: #00ff00; /* Green color for section titles */
+    margin-bottom: 10px; /* Same margin as .join-section h2 */
 }
 
-.sponsor-btn:hover {
-    background: #00cc00;
+.sponsor-section h3 {
+    font-size: 36px; /* Matches .join-section h2 for the main heading */
+    margin-bottom: 20px; /* Slightly adjusted for balance with the paragraph below */
+}
+
+.sponsor-section p {
+    font-size: 16px; /* Standard paragraph size */
+    margin-bottom: 30px; /* Matches .join-section h3 margin for spacing */
+}
+
+.sponsor-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Same gap as .join-section form */
+    max-width: 400px; /* Same width as .join-section form */
+    margin: 0 auto; /* Centered, like .join-section form */
+}
+
+.sponsor-section input {
+    padding: 10px; /* Same padding as .join-section input */
+    border: none; /* Same border style */
+    border-radius: 5px; /* Same border radius */
+    font-size: 16px; /* Same font size */
+}
+
+.sponsorship-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Same gap as .membership-options */
+    margin: 10px 0; /* Same margin as .membership-options */
+}
+
+.sponsorship-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Same gap as .membership-options label */
+}
+
+.sponsor-section button {
+    padding: 10px; /* Same padding as .join-section button */
+    background: #00ff00; /* Same green background */
+    color: #000; /* Same text color */
+    border: none; /* Same border style */
+    border-radius: 5px; /* Same border radius */
+    cursor: pointer; /* Same cursor style */
+}
+
+.sponsor-section button:hover {
+    background: #00cc00; /* Same hover effect as .join-section button */
 }
 
 /* Join Section */
@@ -269,7 +314,6 @@ body {
 .join-section button:hover {
     background: #00cc00;
 }
-
 /* Footer */
 .footer {
     padding: 50px 0;

@@ -14,7 +14,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#resources">Resources</a></li>
+            <li><a href="shop.html">Shop</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
@@ -42,7 +42,8 @@
                 </p>
                 <img src="Leopard.jpg" alt="Leopard">
             </div>
-            <button class="learn-more-btn">LEARN MORE</button>
+            <a href="learn-more.html" class="learn-more-btn">LEARN MORE</a>
+
         </div>
     </section>
 
@@ -83,7 +84,21 @@
         <h2 class="section-title">Become a Sponsor</h2>
         <h3>SUPPORT OUR MISSION</h3>
         <p>Join us as a corporate sponsor and help protect wildlife while enhancing your brand’s reputation.</p>
-        <a href="/sponsor-form" class="sponsor-btn">GET STARTED</a>
+        <!-- Partnership Sign-Up Form -->
+        <form id="sponsor-form" action="/partner-signup" method="POST">
+            <input type="text" name="company" placeholder="Company Name" required>
+            <input type="email" name="email" placeholder="Contact Email" required>
+            <input type="text" name="contact" placeholder="Contact Person" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="sponsorship-options">
+                <label><input type="radio" name="tier" value="bronze" checked> Bronze ($1,000)</label>
+                <label><input type="radio" name="tier" value="silver"> Silver ($5,000)</label>
+                <label><input type="radio" name="tier" value="gold"> Gold ($10,000)</label>
+            </div>
+            <button type="submit">SIGN UP AS SPONSOR</button>
+        </form>
+        <!-- Sign-In Link -->
+        <p>Existing partner? <a href="/partner-login" class="sign-in-link">Sign In</a></p>
     </div>
 </section>
 
@@ -92,18 +107,23 @@
         <div class="overlay">
             <h2>JOIN WITH US</h2>
             <h3>SAVE WILDLIFE, PROTECT NATURE</h3>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="tel" placeholder="Your Number" required>
-                <input type="text" placeholder="Your Address" required>
+            <!-- Sign-Up Form -->
+            <form id="join-form" action="/signup" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Number" required>
+                <input type="text" name="address" placeholder="Your Address" required>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
                 <div class="membership-options">
                     <label><input type="radio" name="membership" value="individual" checked> Individual</label>
                     <label><input type="radio" name="membership" value="family"> Family</label>
                     <label><input type="radio" name="membership" value="corporate"> Corporate</label>
                 </div>
-                <button type="submit">SUBMIT</button>
+                <button type="submit">SIGN UP</button>
             </form>
+            <!-- Sign-In Link -->
+            <p>Already a member? <a href="/login" class="sign-in-link">Sign In</a></p>
         </div>
     </section>
 
