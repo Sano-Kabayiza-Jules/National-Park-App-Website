@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - WildHaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">WILDHAVEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="all-projects" class="all-projects-section">
+        <div class="overlay">
+            <h2 class="section-title">Our Projects</h2>
+            <h3>WHAT WE’RE DOING</h3>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" onclick="openProjectModal('gorilla-guardians')">
+                    <img src="images-gorilla-guard.jpg" alt="Gorilla Guardians">
+                    <h4>Project Gorilla Guardians</h4>
+                    <p>Protecting mountain gorillas in Rwanda’s Volcanoes National Park from poaching and habitat loss.</p>
+                    <span class="project-arrow">></span>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" onclick="openProjectModal('elephant-revival')">
+                    <img src="image-elephant-guard.jpg" alt="Elephant Revival">
+                    <h4>Project Elephant Revival</h4>
+                    <p>Supporting the reintroduction and protection of elephants in Rwanda’s Akagera National Park.</p>
+                    <span class="project-arrow">></span>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" onclick="openProjectModal('akagera-shield')">
+                    <img src="image-akagera-guard.jpg" alt="Akagera Shield">
+                    <h4>Project Akagera Shield</h4>
+                    <p>Conserving Rwanda’s Akagera National Park, protecting lions, rhinos, and leopards.</p>
+                    <span class="project-arrow">></span>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" onclick="openProjectModal('community-education')">
+                    <img src="image-teach-guard.jpg" alt="Community Education">
+                    <h4>Community Education Program</h4>
+                    <p>Educating communities near Rwanda’s parks to reduce human-wildlife conflict.</p>
+                    <span class="project-arrow">></span>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" onclick="openProjectModal('anti-poaching')">
+                    <img src="image-antipoach.jpg" alt="Anti-Poaching">
+                    <h4>Anti-Poaching Patrols</h4>
+                    <p>Deploying patrols to combat poaching across Rwanda’s national parks.</p>
+                    <span class="project-arrow">></span>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card" onclick="openProjectModal('habitat-restoration')">
+                    <img src="image-habitant-resto.jpg" alt="Habitat Restoration">
+                    <h4>Habitat Restoration Initiative</h4>
+                    <p>Restoring degraded habitats in Rwanda to support wildlife populations.</p>
+                    <span class="project-arrow">></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="project-modal">
+        <div class="project-modal-content">
+            <span class="close-btn" onclick="closeProjectModal()">×</span>
+            <div id="project-details">
+                <!-- Project details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacts" class="footer">
+        <div class="overlay">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACTS</h4>
+                    <p>+1 (800) 555-WILD (9453)</p>
+                    <p>+1 (888) 999-SAVE (7283)</p>
+                    <p>info@wildhaven.org</p>
+                    <p>1234 Forest Drive, Green Valley, CA 90210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>SOCIALS</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
